@@ -1,0 +1,87 @@
+:root{
+    --mainColor: #160F29;
+    --textColor: #F2F2F2;
+    --linkcolor: #657ED4;
+    --accentColor: #CCCCCC;
+}
+
+header{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px var(--accentColor) solid;
+}
+
+body{
+    background-color: var(--mainColor);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--textColor);
+}
+
+H1, h2, h3{
+   font-size: xx-large;
+}
+
+section{
+    border-bottom: 2px solid var(--accentColor);
+}
+
+.project{
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img{
+    max-width: 40%;
+}
+
+.button{
+    text-decoration: none;
+    color: var(--textColor);
+    box-sizing: border-box;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+}
+/* added .button */
+
+#projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+#navigation{
+    text-decoration: none;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--dusty);
+    flex-wrap: wrap;
+}
+
+.button:hover{
+    text-decoration: underline;
+    color: var(--linkcolor);
+}
+
+@media (min-width: 820px) {
+    #projects{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #navigation{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+    
+}
