@@ -18,6 +18,7 @@ body{
     background-color: var(--mainColor);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--textColor);
+    font-size: large;
 }
 
 H1, h2, h3{
@@ -38,14 +39,15 @@ section{
 }
 
 img{
-    max-width: 40%;
+    max-height: 40%;
+    
 }
 
 .button{
     text-decoration: none;
     color: var(--textColor);
     box-sizing: border-box;
-    width: 20%;
+    width: 100%;
     height: 40px;
     text-align: center;
 }
@@ -64,7 +66,7 @@ img{
     flex-direction: column;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid var(--dusty);
+    border-bottom: 2px solid var(--accentColor);
     flex-wrap: wrap;
 }
 
@@ -83,5 +85,12 @@ img{
         align-items: baseline;
         justify-content: center;
     }
+
+    .button{
+        width: 20%;
+    }
     
+    body{
+        font-size: medium;
+    }
 }
