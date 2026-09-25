@@ -1,4 +1,4 @@
-:root{
+ :root{  /* variables */
     --mainColor: #160F29;
     --textColor: #F2F2F2;
     --linkcolor: #657ED4;
@@ -32,7 +32,6 @@ section{
 
 img{
     max-width: 60%;
-    
 }
 
 
@@ -45,7 +44,7 @@ img{
     align-items: center;
 }
 
-.button{
+ .button{ /* link styling */
     text-decoration: none;
     color: var(--textColor);
     box-sizing: border-box;
@@ -83,21 +82,21 @@ img{
 }
 
 @media (min-width: 1000px) {
-    #projects{
+    #projects{ /* put projects side by side for better looking designe and and less empty space on big screen */
         grid-template-columns: 1fr 1fr;
     }
 
-    #navigation{
+    #navigation{ /* Put navigation links in a row for less empty space */
         flex-direction: row;
         align-items: baseline;
         justify-content: center;
     }
 
-    .button{
+    .button{ /* make button width smaller so they fit in a row */
         width: 20%;
     }
 
-    .project{
+    .project{ /* set project height so projects are simetrical when side by side */
         height: 500px;
     }
 
@@ -105,12 +104,12 @@ img{
         grid-column: span 2;
     }
     
-    body{
+    body{ /* make font smaller on big sceen */
         font-size: large;
     }
 
 
-    img{
+    img{ /* makes image height the same so images are simetrical when side by side each other */
         max-height: 40%;
         max-width: none;
     }
