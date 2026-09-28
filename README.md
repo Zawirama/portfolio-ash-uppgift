@@ -1,7 +1,7 @@
 # portfolio-ash
 ash portfoli uppgift
 
-Home site is here to give he user an overwiev of everything. The about me page is to tell people about me and my skills. The projects page showcases my projects.
+Home site is here to give the user an overwiev of everything. The about me page is to tell people about me and my skills. The projects page showcases my projects.
 
 I chose to use 1000px as my only break point since i think it is a good break between ipads and big ipads/small laptops. No other break points are nedded since the website works and looks good on all smaller screens.
 
